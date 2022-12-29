@@ -28,4 +28,10 @@ function youSuck(name) {
 
 youSuck("Roberto");
 
-console.log(console);
+// console.log(console); -> is an object
+
+if (5 > 6) {
+  console.log("wow!");
+}else{
+  console.log("Nope!");
+}
