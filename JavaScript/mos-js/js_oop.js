@@ -72,5 +72,8 @@ class Circle2 {
 }
 const circleR8 = new Circle2(8);
 console.log(circleR8.radius);
-
 console.log(circleR8.name);
+
+const circle1 = new Circle(10);
+
+console.log(circle1);
