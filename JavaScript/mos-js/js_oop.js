@@ -74,6 +74,27 @@ const circleR8 = new Circle2(8);
 console.log(circleR8.radius);
 console.log(circleR8.name);
 
+// Adding properties to objects
 const circle1 = new Circle(10);
-
+circle1.location = {x: 1};
 console.log(circle1);
+circle1.area = function () {
+  console.log(3.14 * this.radius * this.radius);
+}
+console.log(circle1.area())
+
+// deleting properties from objects
+delete circle1.area;
+console.log(circle1);
+
+// iterating through properties
+for (let key in circle1) {
+  console.log(key, circle1[key]);
+}
+
+const keys = Object.keys(circle1);
+console.log(keys);
+
+if ('radius' in circle1) {
+  console.log('Radius found!!');
+}
