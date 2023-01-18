@@ -10,5 +10,8 @@ r.mset({
 })
 
 power = r.get("fire")
-
+# Returns Byte Type
 print(power)
+
+# Decodes to str
+print(power.decode("utf-8"))
