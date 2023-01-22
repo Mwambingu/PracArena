@@ -30,3 +30,4 @@ print(sis_members)
 
 print(r.scard(stoday))
 print(r.scard(today.isoformat()))
+print(r.get("leo"))
