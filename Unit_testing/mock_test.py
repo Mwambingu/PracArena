@@ -20,22 +20,16 @@ class TestJoke(unittest.TestCase):
 
         mock_response = MagicMock()
         mock_response.status_code = 200
-        #mock_response.json.return_value = {'value': {'joke': 'hello world'}}
         mock_response.json.return_value = {'setup':'Hello World', 'delivery':'Not hello world'}
-
         mock_requests.get.return_value = mock_response
-
         self.assertEqual(get_joke(), ('Hello World', 'Not hello world'))
-
 
     @patch('mock_me.requests')
     def test_fail_get_joke(self, mock_requests):
 
         mock_response = MagicMock(status_code=300)
         mock_requests.get.return_value = mock_response
-
         self.assertEqual(get_joke(), 'No Jokes')
-
 
 
 if __name__ == "__main__":
