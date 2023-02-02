@@ -1,0 +1,20 @@
+2023-02-02 18:16:16,036:__main__:Can't divide by zero
+2023-02-02 18:19:56,501:__main__:Can't divide by zero
+2023-02-02 18:21:21,463:__main__:Can't divide by zero
+2023-02-02 18:21:39,913:__main__:Can't divide by zero
+2023-02-02 18:23:31,062:__main__:Can't divide by zero
+Traceback (most recent call last):
+  File "/home/somboch/my_repo/PracArena/Python/logging/log-sample-2.py", line 38, in divide
+    return x / y
+ZeroDivisionError: division by zero
+2023-02-02 18:23:31,063:__main__:Can't divide by zero
+2023-02-02 18:24:58,554:__main__:Can't divide by zero
+Traceback (most recent call last):
+  File "/home/somboch/my_repo/PracArena/Python/logging/log-sample-2.py", line 42, in divide
+    return x / y
+ZeroDivisionError: division by zero
+2023-02-02 18:25:34,841:__main__:Can't divide by zero
+Traceback (most recent call last):
+  File "/home/somboch/my_repo/PracArena/Python/logging/log-sample-2.py", line 43, in divide
+    return x / y
+ZeroDivisionError: division by zero

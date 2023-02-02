@@ -1,0 +1,47 @@
+2023-02-02 18:19:36,972:__main__:Add: 44 + 100 = 144
+2023-02-02 18:19:36,972:__main__:Subtract: 44 - 100 = -56
+2023-02-02 18:19:36,972:__main__:Multiply: 44 * 100 = 4400
+2023-02-02 18:19:36,972:__main__:Divide: 44 / 100 = 0.44
+2023-02-02 18:19:56,501:__main__:Add: 44 + 0 = 44
+2023-02-02 18:19:56,501:__main__:Subtract: 44 - 0 = 44
+2023-02-02 18:19:56,501:__main__:Multiply: 44 * 0 = 0
+2023-02-02 18:19:56,501:__main__:Can't divide by zero
+2023-02-02 18:19:56,501:__main__:Divide: 44 / 0 = None
+2023-02-02 18:21:21,463:__main__:Add: 44 + 0 = 44
+2023-02-02 18:21:21,463:__main__:Subtract: 44 - 0 = 44
+2023-02-02 18:21:21,463:__main__:Multiply: 44 * 0 = 0
+2023-02-02 18:21:21,463:__main__:Can't divide by zero
+2023-02-02 18:21:21,463:__main__:Divide: 44 / 0 = None
+2023-02-02 18:21:39,913:__main__:Add: 22 + 0 = 22
+2023-02-02 18:21:39,913:__main__:Subtract: 22 - 0 = 22
+2023-02-02 18:21:39,913:__main__:Multiply: 22 * 0 = 0
+2023-02-02 18:21:39,913:__main__:Can't divide by zero
+2023-02-02 18:21:39,913:__main__:Divide: 22 / 0 = None
+2023-02-02 18:23:31,062:__main__:Add: 44 + 0 = 44
+2023-02-02 18:23:31,062:__main__:Subtract: 44 - 0 = 44
+2023-02-02 18:23:31,062:__main__:Multiply: 44 * 0 = 0
+2023-02-02 18:23:31,062:__main__:Can't divide by zero
+Traceback (most recent call last):
+  File "/home/somboch/my_repo/PracArena/Python/logging/log-sample-2.py", line 38, in divide
+    return x / y
+ZeroDivisionError: division by zero
+2023-02-02 18:23:31,063:__main__:Can't divide by zero
+2023-02-02 18:23:31,063:__main__:Divide: 44 / 0 = None
+2023-02-02 18:24:58,554:__main__:Add: 44 + 0 = 44
+2023-02-02 18:24:58,554:__main__:Subtract: 44 - 0 = 44
+2023-02-02 18:24:58,554:__main__:Multiply: 44 * 0 = 0
+2023-02-02 18:24:58,554:__main__:Can't divide by zero
+Traceback (most recent call last):
+  File "/home/somboch/my_repo/PracArena/Python/logging/log-sample-2.py", line 42, in divide
+    return x / y
+ZeroDivisionError: division by zero
+2023-02-02 18:24:58,555:__main__:Divide: 44 / 0 = None
+2023-02-02 18:25:34,840:__main__:Add: 44 + 0 = 44
+2023-02-02 18:25:34,840:__main__:Subtract: 44 - 0 = 44
+2023-02-02 18:25:34,840:__main__:Multiply: 44 * 0 = 0
+2023-02-02 18:25:34,841:__main__:Can't divide by zero
+Traceback (most recent call last):
+  File "/home/somboch/my_repo/PracArena/Python/logging/log-sample-2.py", line 43, in divide
+    return x / y
+ZeroDivisionError: division by zero
+2023-02-02 18:25:34,841:__main__:Divide: 44 / 0 = None
