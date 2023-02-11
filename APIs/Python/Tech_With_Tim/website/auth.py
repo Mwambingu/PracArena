@@ -2,6 +2,10 @@ from flask import Blueprint
 
 auth = Blueprint('auth', __name__)
 
+@auth.route("/")
+def error():
+  return "<h1>You are lost my friend. Welcome to the void</h1>"
+
 @auth.route("login")
 def login():
   return "<h1>LOGIN</h1>"
