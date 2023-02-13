@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 auth = Blueprint('auth', __name__)
 
@@ -8,12 +8,12 @@ def error():
 
 @auth.route("login")
 def login():
-  return "<h1>LOGIN</h1>"
+  return render_template("login.html", boolean=True)
 
 @auth.route("logout")
 def logout():
-  return "<h1>LOGOUT</h1>"
+  return render_template("logout.html")
 
 @auth.route("sign-up")
 def sign_up():
-  return "<h1>SIGN UP</h1>"
+  return render_template("sign-up.html")
