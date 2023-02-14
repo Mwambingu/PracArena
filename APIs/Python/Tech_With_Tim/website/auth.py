@@ -11,8 +11,18 @@ def error():
 
 @auth.route("/login", methods=["GET", "POST"])
 def login():
-  data = request.form
-  print(data)
+  if request.method == "POST":
+    email = request.form.get('email')
+    password = request.form.get('password')
+
+    user = User.query.filter_by(email=email).first()
+    if user:
+      if check_password_hash(user.password, password):
+        flash("Logged in successfully!", category="success")
+      else:
+        flash("Incorrect password! Try again.", category="error")
+    else:
+      flash("User does not exist!", category="error")
   return render_template("login.html", boolean=True)
 
 @auth.route("logout")
@@ -37,10 +47,14 @@ def sign_up():
       flash('Password must be equal to 8 or more characters.', category='error')
     else:
       # Add user to db
-      new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method="sha256"))
-      db.session.add(new_user)
-      db.session.commit()
-      flash("Account created!", category='success')
-      return redirect(url_for('views.home'))
+      user = User.query.filter_by(email=email).first()
+      if user:
+        flash('User already exists. Use the Login page.', category="error")
+      else:
+        new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method="sha256"))
+        db.session.add(new_user)
+        db.session.commit()
+        flash("Account created!", category='success')
+        return redirect(url_for('views.home'))
 
   return render_template("sign-up.html")
