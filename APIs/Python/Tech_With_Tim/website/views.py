@@ -6,6 +6,3 @@ views = Blueprint('views', __name__)
 def home():
   return render_template("home.html")
 
-@views.route('hello')
-def hello():
-  return "<h1>Hello World</h1>"

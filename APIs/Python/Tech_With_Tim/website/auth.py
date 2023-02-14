@@ -12,7 +12,7 @@ def login():
 
 @auth.route("logout")
 def logout():
-  return render_template("logout.html")
+  return render_template("home.html")
 
 @auth.route("sign-up")
 def sign_up():
