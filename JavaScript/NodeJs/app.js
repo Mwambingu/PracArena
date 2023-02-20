@@ -18,5 +18,14 @@ var sayHello = function (name) {
 // logger.log("Hi I am logger!");
 
 // Importing a single function from a module
-const you = require("./logger");
-you("Monito");
+// const you = require("./logger");
+// you("Monito");
+const Logger = require("./logger");
+const logger = new Logger();
+
+logger.on("logging", (arg) => {
+    console.log("Class logger working!!");
+    console.log(arg);
+});
+
+logger.log("Hello ma baby!");
