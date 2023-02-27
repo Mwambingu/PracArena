@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,6 +17,7 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="style.css" />
         <title>B5 Dashboard</title>
     </head>
 
@@ -25,7 +25,7 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar Starts Here -->
 
-            <div class="bg-white">
+            <div class="bg-white" id="sidebar-wrapper">
                 <div
                     class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase"
                 >
@@ -125,6 +125,9 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="container-fluid px-4">
+                    <h3>Content Here</h3>
+                </div>
             </div>
         </div>
         <script
